@@ -69,7 +69,7 @@ function requestToken() {
   if (walletAddress != "") {
     //start the fetch request
     const data = {
-      address: [walletAddress],
+      address: walletAddress,
     }; //construct the payment request here
     //Start the fetch request
     talk("Requesting tokens...", false);
@@ -105,7 +105,7 @@ function talk(_msg, disappear = true) {
   E("_message").innerHTML = _msg;
   E("_message").style.display = "block";
 
-  if (disappear) {
+  if (disappear == true) {
     //start timeout to hide message
     setTimeout(function () {
       E("_message").style.display = "none";
