@@ -83,7 +83,7 @@ function requestToken() {
       .then((response) => response.json())
       .then((data) => {
         //process results here
-        E("_message").style.display = "none";
+        // E("_message").style.display = "none";
         console.log(data);
         if (data.success == true) {
           talk("Tokens requested successfully");
@@ -101,14 +101,11 @@ function requestToken() {
   }
 }
 //show message
-function talk(_msg, disappear = true) {
+function talk(_msg) {
   E("_message").innerHTML = _msg;
   E("_message").style.display = "block";
-
-  if (disappear == true) {
-    //start timeout to hide message
-    setTimeout(function () {
-      E("_message").style.display = "none";
-    }, 7500);
-  }
+  //start timeout to hide message
+  setTimeout(function () {
+    E("_message").style.display = "none";
+  }, 7500);
 }
