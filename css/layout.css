@@ -1,0 +1,100 @@
+body{
+    font-family:sans-serif;
+    background: #00C9FF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #92FE9D, #00C9FF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #92FE9D, #00C9FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-attachment: fixed;
+}
+input{
+    min-height:50px;
+    border:0px;
+    border-radius:5px;
+    padding-left:10px;
+    font-size:18px;
+    width:100%;
+    outline: none;
+}
+.flex{
+    display:flex;
+    flex-direction:column;
+}
+.centre{
+    display:flex;
+    justify-content:center;
+}
+.topgravity{
+    display:flex;
+    flex-direction:column;
+}
+.center_horizontally{
+    margin-left:auto;
+    margin-right:auto;
+}
+.frosted_glass{
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 7px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(11.3px);
+    -webkit-backdrop-filter: blur(11.3px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.box{
+    width:calc(100% - 40px);
+    max-width:500px;
+    min-height:100px;
+    height:auto;
+}
+.message{
+    background:white;
+    color:forestgreen;
+    padding:10px;
+    text-align:center;
+    animation:fadeAway 7s;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeAway{
+    80%{opacity:1}
+    100%{opacity:0;}
+}
+.main{
+    width:calc(100% - 30px);
+}
+.green_but{
+    background:limegreen;
+    color:white;
+}
+.green_but:active{
+    background:white;
+    color:limegreen;
+}
+.white_but{
+    background:white;
+    color:limegreen;
+}
+.white_but:active{
+    background:limegreen;
+    color:white;
+}
+.blue_but{
+    background:#00C9FF;
+    color:white;
+}
+.blue_but:active{
+    background:white;
+    color:#00C9FF;
+}
+.this_but{
+    margin-left:auto;
+    margin-right:20px;
+    margin-top:10px;
+    outline:none;
+    border-radius:20px;
+    padding:10px;
+    border:0px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-size:16px;
+    padding-left:15px;
+    padding-right:15px;
+    
+}

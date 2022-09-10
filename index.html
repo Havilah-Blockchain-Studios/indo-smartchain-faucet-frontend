@@ -1,0 +1,62 @@
+<html>
+  <head>
+    <title>Indo Faucet</title>
+    <link rel="icon" type="image/x-icon" href="media/favicon.ico" />
+    <link href="css/layout.css" rel="stylesheet" type="text/css" />
+  </head>
+  <!-- meta tags -->
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0 user-scalable=yes"
+  />
+  <meta charset="UTF-16" />
+  <body class="flex">
+    <button onclick="addChain()" id="_addChain" class="white_but this_but">
+      Add Chain
+    </button>
+    <div
+      id="_message"
+      class="box message center_horizontally"
+      style="display: none; min-height: 10px; margin-top: 40px"
+    ></div>
+    <div class="frosted_glass box center_horizontally" style="margin-top: 40px">
+      <center class="centre" style="margin-top: 10px; margin-bottom: 10px">
+        <img src="media/logo.jpg" style="max-height: 80px; max-width: 80px" />
+        <h1 style="margin-left: 15px">Indo Smart Chain</h1>
+      </center>
+    </div>
+    <div class="frosted_glass box center_horizontally" style="margin-top: 40px">
+      <div
+        class="main center_horizontally"
+        style="margin-top: 20px; margin-bottom: 20px"
+      >
+        <font>Request are permitted to 1 IND within 24 hours</font>
+        <center class="topgravity" style="margin-top: 10px">
+          <input
+            id="_address"
+            placeholder="Wallet address 0x....."
+            style="margin-bottom: 10px"
+          />
+          <font>Or</font>
+          <input
+            id="_connect"
+            class="green_but"
+            onclick="connectWallet()"
+            type="button"
+            value="Connect Wallet"
+            style="margin-top: 10px; cursor: pointer"
+          />
+          <input
+            class="blue_but"
+            type="button"
+            onclick="requestToken()"
+            value="Request Tokens"
+            style="border-radius: 30px; margin-top: 10px; cursor: pointer"
+          />
+        </center>
+      </div>
+    </div>
+  </body>
+  <script src="script/dist/web3.min.js"></script>
+  <script src="script/main.js"></script>
+</html>
