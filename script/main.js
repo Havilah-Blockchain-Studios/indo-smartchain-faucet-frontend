@@ -73,7 +73,7 @@ function requestToken() {
     }; //construct the payment request here
     //Start the fetch request
     talk("Requesting tokens...", false);
-    fetch("http://localhost:8080/new", {
+    fetch("https://indo-faucet.herokuapp.com/new", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
